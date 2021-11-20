@@ -4,16 +4,16 @@ var canvas = new fabric.Canvas('c', {isDrawingMode:true});
 canvas.backgroundColor = 'rgb(255, 255, 255)'
 
 // create a rectangle object
-var rect = new fabric.Rect({
-    left: 100,
-    top: 100,
-    fill: 'yellow',
-    width: 100,
-    height: 100
-  });
+// var rect = new fabric.Rect({
+//     left: 100,
+//     top: 100,
+//     fill: 'yellow',
+//     width: 100,
+//     height: 100
+//   });
 
 // "add" rectangle onto canvas
-canvas.add(rect);
+// canvas.add(rect);
 
 // make a function? --> when called, a sticky note is created
 var text = new fabric.Textbox("Insert text", {
@@ -25,8 +25,11 @@ var text = new fabric.Textbox("Insert text", {
   editable: true
 });
 
-canvas.add(rect)
 canvas.add(text)
+text.set('selectable', true)
+
+// canvas.add(rect)
+// rect.set('selectable', true)
 
 // var group = new fabric.Group([ rect, text ], {
 //     left: 150,
@@ -34,11 +37,24 @@ canvas.add(text)
 //   });
   
 //   canvas.add(group);
-rect.set('selectable', true)
-text.set('selectable', true)
+
+
   
 
 
+
+// Double-click event handler
+const fabricDblClick = function(obj, handler) {
+    return function() {
+      if (obj.clicked) handler(obj);
+      else {
+        obj.clicked = true;
+        setTimeout(function() {
+          obj.clicked = false;
+        }, 500);
+      }
+    };
+  };
 
 
 
