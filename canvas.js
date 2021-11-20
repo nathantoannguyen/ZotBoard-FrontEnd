@@ -57,24 +57,22 @@ const fabricDblClick = function(obj, handler) {
   };
 
 
-
-
-
-
-
 // send drawing to backend
 
-// send user drawing to back end
-
 canvas.on('path:created',function(event){
-  console.log()
+  console.log(event)
+  let drawing_path = event.path;
+  let json_msg = JSON.stringify(drawing_path);
 
-
+// sample code for receiving response from backend and replicating it
+//
+  let json_resp = JSON.parse(json_msg);
+  fabric.Path.fromObject(json_resp,function(share_path){
+    share_path.left = 0;
+    canvas.add(share_path);
+  })
 })
-
-
-
-
+ 
 
 
 }
