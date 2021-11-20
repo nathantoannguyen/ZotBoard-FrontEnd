@@ -1,0 +1,18 @@
+
+
+/* placehoder for fonts
+*/
+* {
+  font-family: 'Montserrat', -serif;
+}
+
+body {
+  background: linear-gradient(
+    90deg, rgb(154, 162, 230) 0%, rgb(233, 227, 168) 100%);
+  height: calc(100vh);
+  width: calc(100vw);
+  margin: 0;
+}
+
+
+
