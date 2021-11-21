@@ -4,17 +4,12 @@ var canvas = new fabric.Canvas('c', {backgroundColor: 'rgb(255, 255, 255)'});
 
 window.canvas = canvas
 
-// send drawing to backend
-
-// send user drawing to back end
-
 canvas.on('path:created',function(event){
   console.log()
 
 })
 
 }
-
 
 function add_text_button() {
   canvas.isDrawingMode = false
@@ -89,13 +84,6 @@ function insert_triangle_button() {
   tri.set('selectable', true)
 }
 
-// img src="https://www.newuniversity.org/wp-content/uploads/2018/11/IMG_20181120_1707501.jpg" alt="hppy_petr"
-
-// var canvas = document.getElementById('viewport'),
-// context = canvas.getContext('2d');
-
-// make_base();
-
 function like_idea_emote_button()
 {
   fabric.Image.fromURL('https://appstickers-cdn.appadvice.com/1410106976/827828369/67d24884a1cb520f7e200c823fc8a543-3.png', function(myImg) {
@@ -131,4 +119,3 @@ function hate_idea_emote_button()
     } )
   
   }
-

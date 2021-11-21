@@ -1,8 +1,4 @@
 
-
-/* placehoder for fonts
-*/
-
 *{
   font-family: 'Chewy', cursive;
 }
@@ -228,4 +224,3 @@ button:hover, button:active {
   grid-gap: 1rem;
   margin-bottom: 20px;
   }
-
