@@ -12,7 +12,12 @@
 </head>
 
 <body>
-    <h1 class='canvastitle'>How to Use ZotBoard:</h1>
+    <div class='canvastitle'>
+        <img class="peterimage" src="https://appstickers-cdn.appadvice.com/1410106976/827828369/c1d82001c783b35f3415a07a58fccbf2-4.png" alt="cutepeter">
+        <h1 data-aos="fade-up" data-aos-duration="1500">How to Use ZotBoard:</h1>
+        <img class="peterimage" src="https://appstickers-cdn.appadvice.com/1410106976/827828369/79be20a3abdc1f5c89ec0208757bc92c-5.png" alt="cuterpeter">
+    </div>
+
     <div class="cards2">
         <div id="card5"><p>Use the "Add Text" button to type. Double click the textbox to edit.</p></div>
         <div id="card6"><p>Use the "Draw" button to use the pencil. Use the "Stop Drawing" button to switch back to a cursor.</p></div>
@@ -21,12 +26,15 @@
         <div id="card9"><p>To delete items, select them and drag them off the board.</p></div>
     </div>
     <h2>Use the buttons below to create your board.</h2>
-    <button onclick="add_text_button()">Add Text</button>
-    <button onclick="draw_button()">Draw</button>
-    <button onclick="stop_drawing_button()">Stop Drawing</button>
-    <button onclick="insert_rectangle_button()">Insert Rectangle</button>
-    <button onclick="insert_circle_button()">Insert Circle</button>
-    <button onclick="insert_triangle_button()">Insert Triangle</button>
+    <div class="buttons">
+        <button onclick="add_text_button()">Add Text</button>
+        <button onclick="draw_button()">Draw</button>
+        <button onclick="stop_drawing_button()">Stop Drawing</button>
+        <button onclick="insert_rectangle_button()">Insert Rectangle</button>
+        <button onclick="insert_circle_button()">Insert Circle</button>
+        <button onclick="insert_triangle_button()">Insert Triangle</button>
+    </div>
+    
     <canvas id="c" height="600" width="1400"></canvas>
     
     <div class="centerlink">

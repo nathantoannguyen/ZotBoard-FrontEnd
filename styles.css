@@ -22,6 +22,7 @@ div.petertitle {
   text-align: center;
   padding: 10px;
   background-color: #a2c2eb;
+  margin-bottom: 30px;
 }
 
 .peterimage {
@@ -32,8 +33,10 @@ div.petertitle {
   background: rgb(67,95,193);
   background: linear-gradient(90deg, rgba(67,95,193,1) 0%, rgba(124,136,193,1) 41%, rgba(156,198,243,1) 69%, rgba(137,193,231,1) 100%);
   padding: 10px;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
+  display:grid;
+  grid-template-columns: auto 2fr auto;
 }
 
 h2 {
@@ -77,6 +80,7 @@ a:hover, a:active {
 
 div.centerlink {
   text-align: center;
+  margin-top: 20px;
 }
 .cards {
   display: grid;
@@ -211,3 +215,11 @@ button:hover, button:active {
   background-color: #f5d64c;
   color: white;
 }
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  margin-bottom: 20px;
+  }
