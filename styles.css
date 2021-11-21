@@ -3,14 +3,14 @@
 /* placehoder for fonts
 */
 * {
-  font-family: 'Montserrat', -serif;
+  font-family: 'Indie Flower';
 }
 
 /*linear-gradient(
  90deg, rgb(169, 201, 236) 0%, rgb(245, 240, 171) 100%); */
 
 body {
-  background: white
+  background: white;
   height: calc(100vh);
   width: calc(100vw);
   margin: 0;

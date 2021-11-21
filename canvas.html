@@ -12,13 +12,24 @@
 
 <body>
     <h2>How to Use ZotBoard:</h2>
-    <p>Use the buttons below to edit. You can add text or draw ideas. To delete items, drag them off the board.</p>
-    <button>Add text</button>
-    <button>Draw</button>
-    <button>Clear board</button>
+    <p>Use the buttons below to create your board.</p>
+    <ul>
+        <li>Use the "Add Text" button to type. Double click the textbox to edit.</li>
+        <li>Use the "Draw" button to use the pencil. Use the "Stop Drawing" button to switch back to a cursor.</li>
+        <li>Use the insert shape buttons to add any shapes you need.</li>
+        <li>Click an item to change its size and move it.</li>
+        <li>To delete items, select them and drag them off the board.</li>
+    </ul>
+    <button onclick="add_text_button()">Add Text</button>
+    <button onclick="draw_button()">Draw</button>
+    <button onclick="stop_drawing_button()">Stop Drawing</button>
+    <button onclick="insert_rectangle_button()">Insert Rectangle</button>
+    <button onclick="insert_circle_button()">Insert Circle</button>
+    <button onclick="insert_triangle_button()">Insert Triangle</button>
     <canvas id="c" height="600" width="1400"></canvas>
     
     <a href="index.html">Back to Home Page</a>
+
 </body>
 
 </html>
