@@ -38,11 +38,6 @@ text.set('selectable', true)
   
 //   canvas.add(group);
 
-
-  
-
-
-
 // Double-click event handler
 const fabricDblClick = function(obj, handler) {
     return function() {
@@ -56,23 +51,20 @@ const fabricDblClick = function(obj, handler) {
     };
   };
 
-
 // send drawing to backend
 
 canvas.on('path:created',function(event){
   console.log(event)
-  let drawing_path = event.path;
-  let json_msg = JSON.stringify(drawing_path);
-
-// sample code for receiving response from backend and replicating it
-//
-  let json_resp = JSON.parse(json_msg);
-  fabric.Path.fromObject(json_resp,function(share_path){
-    share_path.left = 0;
-    canvas.add(share_path);
-  })
+  let drawing_path = event.path
+  let send_json = JSON.stringify(drawing_path)
+  socket.send(send_json)
 })
- 
-
-
+  socket.on("message", function(event){
+    console.log("message", event);
+    let json_resp = JSON.parse(event);
+    fabric.Path.fromObject(json_resp,function(share_path){
+      canvas.add(share_path);
+    })
+  })
+  
 }
