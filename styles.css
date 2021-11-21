@@ -60,13 +60,14 @@ div.block {
 }
 
 a:link, a:visited {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(255, 255, 255);
   color: black;
   border: 5px solid #a2c2eb;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block
+
 }
 
 a:hover, a:active {
@@ -133,6 +134,7 @@ div.point-1 {
   letter-spacing: 1px;
 }
 
+
 .cards2 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -194,4 +196,18 @@ letter-spacing: 1px;
 
   }
 
+button, button:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #f5d64c;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  justify-content: center;
+}
 
+button:hover, button:active {
+  background-color: #f5d64c;
+  color: white;
+}
