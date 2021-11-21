@@ -6,20 +6,48 @@
   font-family: 'Montserrat', -serif;
 }
 
+/*linear-gradient(
+ 90deg, rgb(169, 201, 236) 0%, rgb(245, 240, 171) 100%); */
+
 body {
-  background: linear-gradient(
-    90deg, rgb(104, 159, 223) 0%, rgb(25, 64, 192) 100%);
+  background: white
   height: calc(100vh);
   width: calc(100vw);
   margin: 0;
 }
 
 h1 {
-  font-family: 'Titan One', cursive;
+  font-size: 75px;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
   background-color: #a2c2eb;
 }
 
+div.centerblock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.block {
+  background: radial-gradient(circle, rgba(239,234,176,1) 24%, #a2c2eb 100%);
+  padding: 40px;
+  width: 750px;  
+  text-align: center;
+  font-size: larger;
+}
 
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #FFD700;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block
+}
+
+a:hover, a:active {
+  background-color: #FFD700;
+  color: white;
+}
 
