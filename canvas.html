@@ -2,9 +2,11 @@
 <html>
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="http://fabricjs.com/lib/fabric.js"></script>
     <title>ZotBoard</title>
     <script src="canvas.js"></script> 
@@ -12,22 +14,33 @@
 </head>
 
 <body>
-    <h1 class='canvastitle'>How to Use ZotBoard:</h1>
-    <div class="cards2">
+    <script>
+        AOS.init();
+    </script>
+
+    <h1 class='canvastitle' data-aos="fade-up" data-aos-duration="1200">How to Use ZotBoard</h1>
+    <div class="cards2" data-aos="fade-up" data-aos-duration="1200">
         <div id="card5"><p>Use the "Add Text" button to type. Double click the textbox to edit.</p></div>
         <div id="card6"><p>Use the "Draw" button to use the pencil. Use the "Stop Drawing" button to switch back to a cursor.</p></div>
         <div id="card7"><p>Use the insert shape buttons to add any shapes you need.</p></div>
         <div id="card8"><p>Click an item to change its size and move it.</p></div>
         <div id="card9"><p>To delete items, select them and drag them off the board.</p></div>
     </div>
-    <h2>Use the buttons below to create your board.</h2>
-    <button onclick="add_text_button()">Add Text</button>
-    <button onclick="draw_button()">Draw</button>
-    <button onclick="stop_drawing_button()">Stop Drawing</button>
-    <button onclick="insert_rectangle_button()">Insert Rectangle</button>
-    <button onclick="insert_circle_button()">Insert Circle</button>
-    <button onclick="insert_triangle_button()">Insert Triangle</button>
-    <canvas id="c" height="600" width="1400"></canvas>
+    <h2 data-aos="fade-up" data-aos-duration="1200">Use the buttons below to create your board!</h2>
+    
+    <div class="buttons" data-aos="fade-up" data-aos-duration="1200">
+        <button onclick="add_text_button()">Add Text</button>
+        <button onclick="draw_button()">Draw</button>
+        <button onclick="stop_drawing_button()">Stop Drawing</button>
+        <button onclick="insert_rectangle_button()">Insert Rectangle</button>
+        <button onclick="insert_circle_button()">Insert Circle</button>
+        <button onclick="insert_triangle_button()">Insert Triangle</button>
+        <button onclick="like_idea_emote_button()">Like Idea Emote</button>
+        <button onclick="love_idea_emote_button()">Love Idea Emote</button>
+        <button onclick="hate_idea_emote_button()">Hate Idea Emote</button>
+        <button onclick="dislike_idea_emote_button()">When You Dislike An Idea But Want To Be Polite Emote</button>
+        <canvas id="c" height="600" width="1400"></canvas>
+    </div>
     
     <div class="centerlink">
         <a href="index.html">Back to Home Page</a>

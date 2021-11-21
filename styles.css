@@ -46,6 +46,7 @@ div.centerblock{
   justify-content: center;
   align-items: center;
 }
+
 div.block {
   background: rgb(67,95,193);
   background: linear-gradient(90deg, rgba(67,95,193,1) 0%, rgba(124,136,193,1) 41%, rgba(156,198,243,1) 69%, rgba(137,193,231,1) 100%);
@@ -78,6 +79,7 @@ a:hover, a:active {
 div.centerlink {
   text-align: center;
 }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -182,24 +184,26 @@ letter-spacing: 1px;
   font-size: 15px;
   letter-spacing: 1px;
   }
-  #card9 {
-    background-color: rgba(67,95,193,1);
-    border: 2px solid #e7e7e7;
-    border-radius: 4px;
-    text-align: center;
-    padding: .5rem;
-    font-size: 15px;
-    letter-spacing: 1px;
-    }
-  .canvas-container {
-    margin: 0 auto;
 
+#card9 {
+  background-color: rgb(67,95,193,1);
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  text-align: center;
+  padding: .5rem;
+  font-size: 15px;
+  letter-spacing: 1px;
   }
+
+.canvas-container {
+  margin: 0 auto;
+
+}
 
 button, button:visited {
   background-color: white;
   color: black;
-  border: 2px solid #f5d64c;
+  border: 3px solid #f5d64c;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
@@ -211,3 +215,4 @@ button:hover, button:active {
   background-color: #f5d64c;
   color: white;
 }
+
