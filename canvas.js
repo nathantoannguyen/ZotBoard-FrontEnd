@@ -1,13 +1,25 @@
 window.onload = function() {
 
-var canvas = new fabric.Canvas('c', {backgroundColor: 'rgb(255, 255, 255)'});
+// var canvas = new fabric.Canvas('c', { isDrawingMode: true });
+// canvas.backgroundColor = 'rgb(255, 255, 255)'
+var canvas = new fabric.Canvas('c', {backgroundColor: 'rgb(255, 255, 255)'})
 
 window.canvas = canvas
 
-canvas.on('path:created',function(event){
-  console.log()
-
+canvas.on('path:created', function (event) {
+  console.log(event)
+  // let drawing_path = event.path
+  // let send_json = JSON.stringify(drawing_path)
+  // socket.send(send_json)
 })
+
+// socket.on("message", function (event) {
+//   console.log("message", event);
+//   let json_resp = JSON.parse(event);
+//   fabric.Path.fromObject(json_resp, function (share_path) {
+//     canvas.add(share_path);
+//   })
+// })
 
 }
 
