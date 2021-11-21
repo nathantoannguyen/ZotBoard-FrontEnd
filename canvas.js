@@ -1,25 +1,29 @@
+const URL = "http://localhost:5000";
+const socket = io(URL, { autoConnect: true });
+
 window.onload = function() {
 
 // var canvas = new fabric.Canvas('c', { isDrawingMode: true });
-// canvas.backgroundColor = 'rgb(255, 255, 255)'
-var canvas = new fabric.Canvas('c', {backgroundColor: 'rgb(255, 255, 255)'})
+//canvas.backgroundColor = 'rgb(255, 255, 255)'
+var canvas = new fabric.Canvas('c', {backgroundColor: 'rgb(255, 255, 255)', isDrawingMode: true})
 
 window.canvas = canvas
 
 canvas.on('path:created', function (event) {
   console.log(event)
-  // let drawing_path = event.path
-  // let send_json = JSON.stringify(drawing_path)
-  // socket.send(send_json)
+  let drawing_path = event.path
+  let send_json = JSON.stringify(drawing_path)
+  socket.send(send_json)
+  return true
 })
 
-// socket.on("message", function (event) {
-//   console.log("message", event);
-//   let json_resp = JSON.parse(event);
-//   fabric.Path.fromObject(json_resp, function (share_path) {
-//     canvas.add(share_path);
-//   })
-// })
+socket.on("message", function (event) {
+  console.log("message", event);
+  let json_resp = JSON.parse(event);
+  fabric.Path.fromObject(json_resp, function (share_path) {
+    canvas.add(share_path);
+  })
+})
 
 }
 
