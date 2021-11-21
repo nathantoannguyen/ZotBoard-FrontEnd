@@ -1,6 +1,6 @@
 window.onload = function() {
 
-var canvas = new fabric.Canvas('c', {backgroundColor: 'rgb(173, 216, 230)'});
+var canvas = new fabric.Canvas('c', {backgroundColor: 'rgb(255, 255, 255)'});
 
 window.canvas = canvas
 

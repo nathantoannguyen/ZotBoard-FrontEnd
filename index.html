@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>ZotBoard</title>
     <link type="text/css" rel="stylesheet" href="styles.css"/>
 
@@ -9,17 +12,19 @@
 </head>
 
 <body>
-    <h1>Welcome to ZotBoard!</h1>
+    <script>
+        AOS.init();
+    </script>
+    <h1 data-aos="fade-up" data-aos-duration="1500">Welcome to ZotBoard!</h1>
 
     <div class="centerblock">
-        <div class="block">
+        <div class="block" data-aos="fade-up" data-aos-duration="1500">
             <h2>What is ZotBoard?</h2>
             <p>
                 In the midst of the ongoing pandemic and the recent transition of collaboration into a virtual setting,
                 ZotBoard fosters an environment for Anteaters to work together as if they are in person. With ZotBoard, you
-                can add create reminders and take notes using text boxes or visualize your ideas with the drawing function. 
-                We hope that this application will help our fellow Anteaters organize their lives and succeed during their 
-                time at UCI :) 
+                can take notes using text boxes or visualize your ideas with the drawing function. We hope that this 
+                application will help our fellow Anteaters organize their lives and succeed during their time at UCI. :) 
             </p>
             <img src="http://studentlife.uci.edu/newstudent/images/thrive_anteater.png" alt="Peters">
         </div>
