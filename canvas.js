@@ -88,3 +88,47 @@ function insert_triangle_button() {
   canvas.add(tri)
   tri.set('selectable', true)
 }
+
+// img src="https://www.newuniversity.org/wp-content/uploads/2018/11/IMG_20181120_1707501.jpg" alt="hppy_petr"
+
+// var canvas = document.getElementById('viewport'),
+// context = canvas.getContext('2d');
+
+// make_base();
+
+function like_idea_emote_button()
+{
+  fabric.Image.fromURL('https://appstickers-cdn.appadvice.com/1410106976/827828369/67d24884a1cb520f7e200c823fc8a543-3.png', function(myImg) {
+  var newImg = myImg.set({left: 100, top: 100, scaleX: 0.15, scaleY: 0.15}); 
+  canvas.add(newImg)
+    } )
+  
+  }
+
+function love_idea_emote_button()
+{
+  fabric.Image.fromURL('https://appstickers-cdn.appadvice.com/1410106976/827828369/d7a76df54e1521ccf29d8007eac18023-2.png', function(myImg) {
+  var newImg = myImg.set({left: 100, top: 100, scaleX: 0.15, scaleY: 0.15}); 
+  canvas.add(newImg)
+    } )
+  
+  }
+
+function hate_idea_emote_button()
+{
+  fabric.Image.fromURL('https://appstickers-cdn.appadvice.com/1410106976/827828369/73b37fbb039a1be67a7ddb88da6f3cc7-11.png', function(myImg) {
+  var newImg = myImg.set({left: 100, top: 100, scaleX: 0.15, scaleY: 0.15}); 
+  canvas.add(newImg)
+    } )
+  
+  }
+
+  function dislike_idea_emote_button()
+{
+  fabric.Image.fromURL('https://appstickers-cdn.appadvice.com/1410106976/827828369/51fbce8a2551813be61ce4c2bc72a60a-7.png', function(myImg) {
+  var newImg = myImg.set({left: 100, top: 100, scaleX: 0.15, scaleY: 0.15}); 
+  canvas.add(newImg)
+    } )
+  
+  }
+
